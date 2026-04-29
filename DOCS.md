@@ -79,3 +79,10 @@ Post-payment redirect goes to `https://rendara.nanocorp.app/checkout/success` â€
 - `vm-context/vm-root/.nanocorp/codex_prompt.txt` was reduced to a stub because the original task prompt contained live GitHub authentication material and GitHub push protection continued to reject fuller sanitized copies.
 - Intentional exclusion: OS and package-manager docs under locations such as `/usr`, `/opt/yarn-v1.22.22`, and `/__modal` were preserved in manifests but not copied into the repo tree.
 - Export directory added: `vm-context/`
+
+## codex_prompt Recovery Notes
+- Date: 2026-04-29
+- Live VM source path: `/.nanocorp/codex_prompt.txt`
+- Repo-tracked export path: `vm-context/vm-root/.nanocorp/codex_prompt.txt`
+- The live VM file still contains the original GitHub PAT.
+- The repo copy was updated from a stub to a sanitized prompt body that preserves the full text while replacing only the PAT with `GITHUB_TOKEN_REDACTED`.
