@@ -52,3 +52,11 @@ Script URL: `https://phospho-nanocorp-prod--nanocorp-api-fastapi-app.modal.run/b
 ## Webhook / Post-Payment
 Webhook endpoint does NOT exist yet — create `app/api/webhooks/nanocorp/route.ts` if needed.
 Post-payment redirect goes to `https://rendara.nanocorp.app/checkout/success` — page not yet created.
+
+## Plotcast Repo Export Notes
+- Date: 2026-04-29
+- Task: publish the existing local codebase to a new public GitHub repository under the `plotcast` account.
+- Filesystem search results: no separate `/nanocorp-hq/plotcast` or other `plotcast` source directory exists in this environment.
+- Source used for export: `/home/worker/repo` (the only local git working tree present).
+- Starting commit for export: `9928a34` (`docs: update Stripe products table with Starter and Growth plans`).
+- GitHub target repo: `https://github.com/plotcast/plotcast`
