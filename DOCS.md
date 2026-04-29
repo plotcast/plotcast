@@ -86,3 +86,20 @@ Post-payment redirect goes to `https://rendara.nanocorp.app/checkout/success` â€
 - Repo-tracked export path: `vm-context/vm-root/.nanocorp/codex_prompt.txt`
 - The live VM file still contains the original GitHub PAT.
 - The repo copy was updated from a stub to a sanitized prompt body that preserves the full text while replacing only the PAT with `GITHUB_TOKEN_REDACTED`.
+
+## VM Snapshot Task Notes
+- Date: 2026-04-29
+- Repo state during exploration: current branch `main`; origin remote still points to `git@github.com:nanocorp-hq/rendara.git`.
+- `.agents` in this checkout is a directory, not a file.
+- `.agents/skills` is a symlink to `/opt/nanocorp/skills`.
+- `.claude` in this checkout is a directory, not a file.
+- `.claude/skills` is a symlink to `/opt/nanocorp/skills`.
+- `/opt/nanocorp/skills` currently contains two skill directories: `agent-browser/` and `frontend-design/`, each with `SKILL.md`.
+- Materialized `.agents` referenced content to `vm-snapshot/agents-content/opt/nanocorp/skills/` to preserve the original absolute source path in the snapshot.
+- Materialized direct `/opt/nanocorp/skills` content to `vm-snapshot/nanocorp-skills/`.
+- Copied files:
+  - `vm-snapshot/agents-content/opt/nanocorp/skills/agent-browser/SKILL.md`
+  - `vm-snapshot/agents-content/opt/nanocorp/skills/frontend-design/SKILL.md`
+  - `vm-snapshot/nanocorp-skills/agent-browser/SKILL.md`
+  - `vm-snapshot/nanocorp-skills/frontend-design/SKILL.md`
+- Token sanitization scan for the provided GitHub PAT found no matches in the working tree, so no file content replacements were necessary before commit.
