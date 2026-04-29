@@ -1,0 +1,13 @@
+This exported copy of `/.nanocorp/codex_prompt.txt` was intentionally reduced to a stub.
+
+The original prompt included live GitHub authentication material in the task body, and GitHub push protection rejected every export variant that retained that structure.
+
+The surrounding VM context is preserved elsewhere in this export:
+
+- `vm-context/README.md`
+- `vm-context/manifests/find-all-md-files.txt`
+- `vm-context/manifests/find-context-and-readme-files.txt`
+- `vm-context/manifests/root-directory-listings.txt`
+- `DOCS.md`
+
+Credential-bearing prompt text was removed to allow a safe push to `plotcast/plotcast`.

@@ -1,0 +1,39 @@
+# ls -la /
+total 8
+drwxr-xr-x  1 root root 140 Apr 29 17:43 .
+drwxr-xr-x  1 root root 140 Apr 29 17:43 ..
+drwxr-xr-x  1 root root 140 Apr 29 17:43 .nanocorp
+drwxr-xr-x  1 root root  16 Apr 29 01:39 .uv
+drwxr-xr-x  1 root root 101 Apr 29 17:43 __modal
+lrwxrwxrwx  1 root root   7 Dec 29 00:00 bin -> usr/bin
+drwxr-xr-x  1 root root   6 Aug 24  2025 boot
+drwxr-xr-x  5 root root 340 Apr 29 17:43 dev
+drwxr-xr-x  1 root root  27 Apr 29 00:56 etc
+drwxr-xr-x  1 root root  60 Apr 29 17:43 home
+lrwxrwxrwx  1 root root   7 Dec 29 00:00 lib -> usr/lib
+lrwxrwxrwx  1 root root   9 Dec 29 00:00 lib64 -> usr/lib64
+drwxr-xr-x  1 root root   6 Dec 29 00:00 media
+drwxr-xr-x  1 root root   6 Dec 29 00:00 mnt
+drwxr-xr-x  1 root root  60 Apr 29 17:43 opt
+dr-xr-xr-x 14 root root   0 Apr 29 17:43 proc
+drwx------  1 root root  28 Apr 29 00:56 root
+drwxr-xr-x  1 root root  34 Apr 29 17:43 run
+lrwxrwxrwx  1 root root   8 Dec 29 00:00 sbin -> usr/sbin
+drwxr-xr-x  1 root root   6 Dec 29 00:00 srv
+drwxr-xr-x 12 root root   0 Apr 29 17:43 sys
+drwxrwxrwx  1 root root  38 Apr 29 01:39 tmp
+drwxr-xr-x  1 root root  60 Apr 29 17:43 usr
+drwxr-xr-x  1 root root  41 Dec 29 00:00 var
+
+# ls -la /home/worker/
+total 6
+drwxr-xr-x 1 worker worker  160 Apr 29 17:43 .
+drwxr-xr-x 1 root   root     60 Apr 29 17:43 ..
+-rw-r--r-- 1 worker worker  220 Jun  6  2025 .bash_logout
+-rw-r--r-- 1 worker worker 3526 Jun  6  2025 .bashrc
+drwxr-xr-x 1 worker worker  300 Apr 29 17:43 .codex
+-rw-r--r-- 1 worker worker   83 Apr 29 17:43 .gitconfig
+-rw-r--r-- 1 worker worker  807 Jun  6  2025 .profile
+drwx------ 1 worker worker  140 Apr 29 17:43 .ssh
+drwxr-xr-x 1 worker worker  340 Apr 29 17:46 repo
+drwxr-xr-x 1 worker worker   40 Apr 29 17:43 workspace

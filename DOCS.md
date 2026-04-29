@@ -60,3 +60,22 @@ Post-payment redirect goes to `https://rendara.nanocorp.app/checkout/success` â€
 - Source used for export: `/home/worker/repo` (the only local git working tree present).
 - Starting commit for export: `9928a34` (`docs: update Stripe products table with Starter and Growth plans`).
 - GitHub target repo: `https://github.com/plotcast/plotcast`
+
+## VM Context Import Notes
+- Date: 2026-04-29
+- Task: commit all relevant VM markdown and context files into `plotcast/plotcast`.
+- Global discovery commands executed:
+  - `find / -name "*.md" -not -path "*/node_modules/*" -not -path "*/.git/*" 2>/dev/null`
+  - `find / \( -iname 'AGENTS.md' -o -iname 'agents.md' -o -iname 'context*' -o -iname 'README*' \) -not -path '*/node_modules/*' -not -path '*/.git/*' 2>/dev/null`
+  - `ls -la /`
+  - `ls -la /home/worker/`
+- Raw outputs were saved under `vm-context/manifests/`.
+- Relevant copied sources were:
+  - `/.nanocorp/`
+  - `/home/worker/.codex/skills/.system/`
+  - `/opt/nanocorp/skills/`
+- No standalone `AGENTS.md`, `agents.md`, or `context.md` files were present outside system/package content.
+- `.agents/skills` and `.claude/skills` exist in the repo as symlinks to `/opt/nanocorp/skills`.
+- `vm-context/vm-root/.nanocorp/codex_prompt.txt` was reduced to a stub because the original task prompt contained live GitHub authentication material and GitHub push protection continued to reject fuller sanitized copies.
+- Intentional exclusion: OS and package-manager docs under locations such as `/usr`, `/opt/yarn-v1.22.22`, and `/__modal` were preserved in manifests but not copied into the repo tree.
+- Export directory added: `vm-context/`
