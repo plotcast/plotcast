@@ -9,9 +9,15 @@
 ## Live URL
 https://rendara.nanocorp.app
 
-## Stripe Payment Link
-https://buy.stripe.com/6oU8wQcdKg1pgXg64zePp0x
-Product: "Starter Video" — $299 (product_id: 8b1c145d-9107-4c95-8cc8-1a8159dee617)
+## Stripe Products & Payment Link
+
+**Active payment link (all products):** https://buy.stripe.com/cNibJ2b9G3eDfTcdx1ePp0K
+
+| Product | Price | ID |
+|---|---|---|
+| Starter Video (legacy) | $299 one-time | 8b1c145d-9107-4c95-8cc8-1a8159dee617 |
+| Rendara Starter — 1 Data Video | $299 one-time | d8f07be1-3fa6-442e-9f2f-cb81bb37800c |
+| Rendara Growth — 3 Data Videos/Month | $799/mo | 92d681ed-eaf4-4772-9fbb-11aa2a59b77f |
 
 ## File Structure
 ```
